@@ -1,8 +1,4 @@
 ---
-- hosts: db_servers
-  become: true
-  tasks:
-
   - name: install mariadb package (CentOS)
     tags: centos,db,mariadb
     yum:

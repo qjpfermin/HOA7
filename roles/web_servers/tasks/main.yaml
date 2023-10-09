@@ -1,8 +1,4 @@
 ---
-- hosts: web_servers
-  become: true
-  tasks:
-  
   - name: copy default html file for site
     tags: apache, apache2, httpd
     copy:
@@ -37,4 +33,4 @@
       name: httpd
       state: started
       enabled: true
-    when: ansible_distribution == "CentOS
+    when: ansible_distribution == "CentOS"

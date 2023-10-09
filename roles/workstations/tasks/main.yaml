@@ -1,8 +1,4 @@
 ---
-- hosts: workstations
-  become: true
-  tasks:
-
   - name: install unzip
     tags: works
     package:
